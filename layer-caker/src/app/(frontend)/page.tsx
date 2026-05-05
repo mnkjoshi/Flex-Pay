@@ -1,215 +1,142 @@
 import Link from 'next/link'
-import { TitleTwo } from '@/components/titletwo'; 
-import { TitleThree } from '@/components/titlethree'
+import Image from 'next/image'
+import { Hero } from '@/components/hero'
+import afterpay from "../../../public/afterpay.png"
+import applepay from "../../../public/applepay.png"
+import klarna from "../../../public/klarna.png"
+import bnpparibas from "../../../public/bnpparibas.png"
+import googlepay from "../../../public/googlepay.png"
+import alipay from "../../../public/alipay.png"
+import paypal from "../../../public/paypal.png"
+import mastercard from "../../../public/mastercard.png"
+import bancontact from "../../../public/bancontact.png"
+import bigcommerce from "../../../public/bigcommerce.png"
+import bpi from "../../../public/bpi.png"
+import salesforce from "../../../public/salesforce.png"
+import floatingphone from "../../../public/floatingphone.png"
+import hands from "../../../public/hands.jpg"
+import robot from "../../../public/robot.jpg"
 
-import Image from 'next/image';
-import afterpay from "../../../public/afterpay.png";
-import applepay from "../../../public/applepay.png";
-import klarna from "../../../public/klarna.png";
-import bnpparibas from "../../../public/bnpparibas.png";
-import googlepay from "../../../public/googlepay.png";
-import alipay from "../../../public/alipay.png";
-import paypal from "../../../public/paypal.png";
-import mastercard from "../../../public/mastercard.png";
-import bancontact from "../../../public/bancontact.png";
-import bigcommerce from "../../../public/bigcommerce.png";
-import bpi from "../../../public/bpi.png";
-import salesforce from "../../../public/salesforce.png";
-import mobile1Sneaker from "../../../public/mobile1sneaker.png";
-import floatingphone from "../../../public/floatingphone.png";
-import clothingstore from "../../../public/clothingstore.jpg";
-import paymentterminal from "../../../public/paymentterminal.png";
-import bank from "../../../public/bank.jpg"
-
-
+export const metadata = {
+  title: "Flex-Pay - Unified Global Payment Infrastructure",
+  description: "Connect to 140+ countries, 400+ payment methods, and 120+ currencies through a single, intelligent API. Flex-Pay revolutionizes payment orchestration.",
+  openGraph: {
+    title: "Flex-Pay - Global Payment Infrastructure",
+    description: "Unified payments for modern commerce",
+    type: "website",
+  },
+}
 
 export default async function Page() {
   return (
-    <><><><><><><><section className="container mx-auto grid grid-cols-3 gap-6 p-12 bg-indigo-800 ">
-      <TitleThree>Scale Evolve and Innovate with FLEX-PAY</TitleThree>
-      <Image className="object-cover" src={mobile1Sneaker} alt="company logo" />
+    <>
+      <Hero />
 
-      <TitleTwo> Redefining the meaning of Flexible Global Payment Infrastructure.</TitleTwo>
-
-    </section><section className="container mx-auto grid grid-cols-1 gap-6 p-12">
-        <h1 className="text-[35px] text-center font-sans">WELCOME TO FLEXIBLE GLOBAL PAYMENT INFRASTRUCTURE  </h1>
-        <h2 className="text-[20px] font-sans mx-20">Flex-Pay™ is transforming the global payment infrastructure—uniting nine dynamic payment types and a suite of additional services, all accessible through a single, seamless API.
-          <br></br><br></br>We simplify payment processes, advance financial inclusivity, and empower businesses to deliver exceptional user experiences in the ever-evolving world of digital commerce.  </h2>
-
-        <h1 className="text-[35px] text-center text-semibold font-sans mx-20"> PROUDLY PARTNERED WITH INDUSTRY STANDARDS </h1>
-      </section></><section className="container mx-auto grid grid-cols-4 gap-12 p-12">
-        <Image className="object-cover m-4" src={afterpay} alt="company logo" />
-        <Image className="object-cover m-4" src={applepay} alt="company logo" />
-        <Image className="object-cover m-4" src={klarna} alt="company logo" />
-        <Image className="object-cover m-4" src={bnpparibas} alt="company logo" />
-        <Image className="object-cover m-4" src={googlepay} alt="company logo" />
-        <Image className="object-cover 5 m-4" src={alipay} alt="company logo" />
-        <Image className="object-cover m-4" src={paypal} alt="company logo" />
-        <Image className="object-cover" src={mastercard} alt="company logo" />
-        <Image className="object-cover m-4" src={bancontact} alt="company logo" />
-        <Image className="object-cover my-20" src={bigcommerce} alt="company logo" />
-        <Image className="object-cover m-4" src={bpi} alt="company logo" />
-        <Image className="object-cover m-4" src={salesforce} alt="company logo" />
-      </section></><section className="container mx-auto grid grid-cols-2 gap-5 p-10">
-        <Image className="object-cover" src={floatingphone} alt="company logo" />
-        <div>
-          <h1 className="text-[30px] font-sans my-7 text-bold"> Elegantly Unlocking Limitless Ways to Pay </h1>
-          <h2 className="text-[15px] font-sans">Step into a world of limitless payment possibilities and integrated services, unified through one seamless connection. </h2>
-          <h1 className="text-[30px] font-sans my-7 text-bold"> Low-Effort Implementation </h1>
-          <h2 className="text-[15px] font-sans">Flex-Pay offers rapid setup through an intuitive interface and quick integration. Businesses can configure and activate each payment method in under a minute—saving valuable time and resources. </h2>
-          <h1 className="text-[30px] font-sans my-7 text-bold"> Continuous Platform Development </h1>
-          <h2 className="text-[15px] font-sans">Step into a world of limitless payment possibilities and integrated services, unified through one seamless connection. </h2>
-          <h1 className="text-[30px] font-sans my-7 text-bold"> Multi-Level Hierarchy</h1>
-          <h2 className="text-[15px] font-sans">Our multi-level hierarchy architecture simplifies collaboration and scaling with gateway and merchant partners—providing flexibility, visibility, and control without added complexity. </h2>
-          <h1 className="text-[30px] font-sans my-7 text-bold"> White Label Solutions </h1>
-          <h2 className="text-[15px] font-sans">Flex-Pay’s white-label framework enables fully branded, customizable payment experiences through seamless integration. Businesses can scale confidently while maintaining full ownership of their interface and brand identity. </h2>
-        </div>
-      </section></><section className="container mx-auto grid grid-cols-1 gap-6 p-12 bg-indigo-800 ">
-        <h1 className="text-1xl md:text-3xl lg:text-5xl font-bold text-slate-800 text-pretty text-white"> PAYMENT INFRASTRUCTURE DESIGNED FOR GROWTH </h1>
-
-        <h1 className="text-0.5xl md:text-2xl lg:text-3xl text-slate-800 text-pretty text-white font-sans my-7 text-plain"> Flex-Pay unifies nine payment architectures through one streamlined API—simplifying transactions, improving efficiency, and driving financial inclusivity. </h1>
-      </section></><section className="container mx-auto grid grid-cols-1 gap-6 p-12">
-        <h1 className="text-[35px] text-center font-sans m-1">THE FLEX-PAY SOLUTIONS </h1>
-        <div>
-          <section className="container mx-auto grid grid-cols-2 gap-12 p-12">
-            <Image className="object-cover m-4" src={clothingstore} alt="company logo" />
-            <div>
-              <h1 className="text-[30px] font-sans my-7 text-bold">FLEX-PAY Direct™  </h1>
-              <h2 className="text-[15px] font-sans">FLEX-PAY Direct™ is a global initiative that supports merchants through complimentary integration—enabling fast access to diverse payment options with minimal effort.
-
-                Integrate once to unlock Flex-Pay’s full suite of payment types, with new integrations added weekly </h2>
-
-
-              <ul className="list-disc list-inside"> <li> Reorder checkout elements in seconds using our no-code, drag-and-drop editor. </li>
-                <li>  Settle transactions faster with direct agreements through connected payment providers. </li></ul>
-
-            </div>
-          </section><section className="container mx-auto grid grid-cols-2 gap-12 p-12">
-            <div>
-              <h1 className="text-[30px] font-sans my-7 text-bold">FLEX-PAY Synergy™  </h1>
-              <h2 className="text-[15px] font-sans">FLEX-PAY Synergy™ is a white-labeled solution tailored for payment service providers, gateways, and acquirers. It offers seamless integration, single sign-on access, full customization, and a flexible three-level hierarchy.</h2>
-
-
-              <ul className="list-disc list-inside"> <li> Maintain oversight of your entire merchant base through our multi-level hierarchy.</li>
-                <li> Customize branding and interface with complete control using our white-label capability. </li>
-                <li> Introduce new payment methods instantly with our single sign-on integration. </li>
-              </ul>
-
-            </div>
-            <Image className="object-cover m-4" src={paymentterminal} alt="company logo" />
-
-          </section>
-          <section className="container mx-auto grid grid-cols-2 gap-12 p-12">
-            <Image className="object-cover m-4" src={bank} alt="company logo" />
-            <div>
-              <h1 className="text-[30px] font-sans my-7 text-bold">FLEX-PAY Banking™  </h1>
-              <h2 className="text-[15px] font-sans">FLEX-PAY Banking™ empowers traditional banks to evolve into agile, digitally driven fintechs—streamlining operations, modernizing infrastructure, and enhancing competitiveness. </h2>
-
-
-              <ul className="list-disc list-inside"> <li> Provide merchants with a comprehensive suite of modern payment solutions. </li>
-                <li>  Reduce operational costs tied to payment services while improving efficiency and profitability. </li>
-                <li> Access Flex-Pay’s extensive payment integration library to strengthen your institution’s digital offerings. </li>
-              </ul>
-
-            </div>
-          </section>
-        </div>
-
-      </section></><section className="container mx-auto grid grid-cols-1 gap-6 p-12 bg-indigo-800 ">
-        <h1 className="text-1xl md:text-3xl lg:text-5xl font-bold text-slate-800 text-pretty max-w-5xl text-white"> GLOBAL REACH </h1>
-
-        <h1 className="text-0.5xl md:text-2xl lg:text-3xl text-slate-800 text-pretty text-white font-sans my-7 text-plain"> Unlock Global Payment Flexibility Empower cross-border commerce with Flex-Pay's expansive network of payment methods, multi-currency support, and worldwide integrations.
-          Grow effortlessly, transact securely, and scale your business globally. </h1>
-        <h1 className="text-1xl md:text-3xl lg:text-5xl font-bold text-slate-800 text-pretty max-w-5xl text-white"> FLEX-PAY ECOSYSTEM AT A GLANCE: </h1>
-
-        <div className="container mx-auto grid grid-cols-4 gap-6 p-12 bg-indigo-800 ">
-          <div>
-            <h1 className="text-1xl md:text-3xl lg:text-5xl font-bold text-slate-800 text-pretty max-w-5xl text-white"> +400 </h1>
-            <h1 className="text-0.5xl md:text-1.5xl lg:text-2.5xl text-slate-800 text-pretty max-w-2.5xl text-white font-sans my-7 text-plain"> INTEGRATIONS </h1>
-            <h1 className="text-0.5xl md:text-1.5xl lg:text-2.5xl text-slate-800 text-pretty max-w-2.5xl text-white font-sans my-7 text-plain"> Comprehensive network spanning all major payment types and regional preferences. </h1>
-
-          </div>
-          <div>
-            <h1 className="text-1xl md:text-3xl lg:text-5xl font-bold text-slate-800 text-pretty max-w-5xl text-white"> +140 </h1>
-            <h1 className="text-0.5xl md:text-1.5xl lg:text-2.5xl text-slate-800 text-pretty max-w-2.5xl text-white font-sans my-7 text-plain"> COUNTRIES COVERED </h1>
-            <h1 className="text-0.5xl md:text-1.5xl lg:text-2.5xl text-slate-800 text-pretty max-w-2.5xl text-white font-sans my-7 text-plain"> Global reach across six continents with localized payment solutions. </h1>
-
-          </div>
-          <div>
-            <h1 className="text-1xl md:text-3xl lg:text-5xl font-bold text-slate-800 text-pretty max-w-5xl text-white"> +120 </h1>
-            <h1 className="text-0.5xl md:text-1.5xl lg:text-2.5xl text-slate-800 text-pretty max-w-2.5xl text-white font-sans my-7 text-plain"> CURRENCIES SUPPORTED </h1>
-            <h1 className="text-0.5xl md:text-1.5xl lg:text-2.5xl text-slate-800 text-pretty max-w-2.5xl text-white font-sans my-7 text-plain"> Multi-currency processing enabling true international commerce capabilities. </h1>
-
-          </div>
-          <div>
-            <h1 className="text-1xl md:text-3xl lg:text-5xl font-bold text-slate-800 text-pretty max-w-5xl text-white"> 9 </h1>
-            <h1 className="text-0.5xl md:text-1.5xl lg:text-2.5xl text-slate-800 text-pretty max-w-2.5xl text-white font-sans my-7 text-plain"> PAYMENT CATEGORIES </h1>
-            <h1 className="text-0.5xl md:text-1.5xl lg:text-2.5xl text-slate-800 text-pretty max-w-2.5xl text-white font-sans my-7 text-plain"> Complete coverage from traditional cards and interest free payments to emerging cryptocurrency solutions. </h1>
-
+      {/* Partners Section */}
+      <section className="py-20 bg-gradient-to-b from-gray-50 via-white to-purple-50">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">Trusted by Industry Leaders</h2>
+          <p className="text-gray-600 text-center mb-12">Seamlessly integrated with the world's top payment platforms</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center justify-items-center opacity-60 hover:[&>*]:opacity-100 transition-opacity">
+            <Image className="h-12 w-auto object-contain" src={afterpay} alt="afterpay" />
+            <Image className="h-12 w-auto object-contain" src={applepay} alt="apple pay" />
+            <Image className="h-12 w-auto object-contain" src={klarna} alt="klarna" />
+            <Image className="h-12 w-auto object-contain" src={googlepay} alt="google pay" />
+            <Image className="h-12 w-auto object-contain" src={paypal} alt="paypal" />
+            <Image className="h-12 w-auto object-contain" src={mastercard} alt="mastercard" />
           </div>
         </div>
-      </section></>
-      <section className="container mx-auto grid grid-cols-1 gap-6 p-12 bg-linear-to-r from-black to-red-900 content-center">
+      </section>
 
-        <h1 className="text-1xl md:text-2xl lg:text-3xl text-slate-800 text-pretty text-white font-sans my-7 text-center text-plain"> Get in touch with us today to discover how Flex-Pay is shaping the future of global payments. </h1>
-        <Link
-              href="/signup"
-            >
-              <div className = "flex justify-center"> 
-              <button className="bg-white hover:bg-purple-900 text-black font-bold px-4 py-3 rounded-full">
-        SIGN UP
-        </button>
-            </div> 
-            </Link>
- 
-      </section><section className="container mx-auto grid grid-cols-2 gap-6 p-12 bg-purple-900 content-center">
+      {/* Features Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">Why Choose Flex-Pay?</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { icon: "⚡", title: "One API Integration", desc: "Connect once and access 400+ payment methods across all regions" },
+              { icon: "🌍", title: "Global Coverage", desc: "Support 140+ countries with local payment preferences built-in" },
+              { icon: "💱", title: "Multi-Currency", desc: "Process transactions in 120+ currencies with real-time rates" },
+              { icon: "🔒", title: "Enterprise Security", desc: "Bank-grade encryption and compliance with all regulations" },
+              { icon: "📊", title: "Advanced Analytics", desc: "Real-time insights and transaction optimization tools" },
+              { icon: "⚙️", title: "No-Code Setup", desc: "Drag-and-drop customization without developer intervention" },
+            ].map((feature, idx) => (
+              <div key={idx} className="bg-gradient-to-br from-gray-50 to-purple-50 border border-purple-200 rounded-xl p-8 hover:border-purple-400 hover:shadow-lg transition-all">
+                <div className="text-4xl mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
+                <p className="text-gray-600">{feature.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-       
-        <Link href="/bottomheader/aboutus">
+      {/* Solutions Section */}
+      <section className="py-20 bg-gradient-to-b from-purple-50 to-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">Built for Every Business Type</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Flex-Pay Direct",
+                subtitle: "For Merchants",
+                desc: "Unified checkout with drag-and-drop customization. Settle faster with direct agreements and pre-built e-commerce connectors.",
+                link: "/flexpaydirect",
+              },
+              {
+                title: "Flex-Pay Synergy",
+                subtitle: "For PSPs & Gateways",
+                desc: "White-label solution with SSO integration, multi-level hierarchy, and full customization for your merchant base.",
+                link: "/flexpaysynergy",
+              },
+              {
+                title: "Flex-Pay Banking",
+                subtitle: "For Financial Institutions",
+                desc: "Transform traditional banking into agile fintech. Modernize infrastructure and expand payment capabilities.",
+                link: "#",
+              },
+            ].map((solution, idx) => (
+              <Link key={idx} href={solution.link}>
+                <div className="bg-gradient-to-br from-white to-gray-50 border border-purple-200 rounded-xl p-8 hover:border-purple-400 hover:shadow-xl transition-all cursor-pointer h-full">
+                  <div className="text-purple-600 text-sm font-semibold mb-2">{solution.subtitle}</div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{solution.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{solution.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
-         <h1 className="text-0.5xl md:text-0.75xl lg:text-1xl text-slate-800 text-pretty text-white font-sans my-2 text-center text-plain"> About Us </h1>
-            
-                    
+      {/* E-Commerce Platforms Section */}
+      <section className="py-20 bg-white border-y border-gray-200">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">Pre-Built E-Commerce Connectors</h2>
+          <p className="text-gray-600 text-center mb-12">Deploy in minutes with native integrations for the leading platforms</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+            <Image className="h-16 w-auto object-contain opacity-60 hover:opacity-100 transition" src={bigcommerce} alt="bigcommerce" />
+            <Image className="h-16 w-auto object-contain opacity-60 hover:opacity-100 transition" src={salesforce} alt="salesforce" />
+            <Image className="h-16 w-auto object-contain opacity-60 hover:opacity-100 transition" src={klarna} alt="klarna" />
+            <Image className="h-16 w-auto object-contain opacity-60 hover:opacity-100 transition" src={bnpparibas} alt="bnpparibas" />
+          </div>
+        </div>
+      </section>
 
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-purple-600 via-purple-700 to-blue-600 border-t border-purple-600">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold text-white mb-6">Ready to Transform Your Payments?</h2>
+          <p className="text-xl text-purple-100 mb-10 max-w-2xl mx-auto">Join leading companies leveraging Flex-Pay for global payments orchestration</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/signup" className="px-8 py-4 bg-white text-purple-700 font-bold rounded-lg hover:bg-purple-50 transition-all shadow-lg hover:shadow-xl text-lg">
+              Get Started Free
             </Link>
-        <Link
-              href="/bottomheader/legal"
-            >
-                       <h1 className="text-0.5xl md:text-0.75xl lg:text-1xl text-slate-800 text-pretty text-white font-sans my-2 text-center text-plain"> Legal </h1>
-      
-            
+            <Link href="/bottomheader/contactus" className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-all text-lg">
+              Contact Sales
             </Link>
-        <Link
-              href="/bottomheader/careers"
-            >
-                        <h1 className="text-0.5xl md:text-0.75xl lg:text-1xl text-slate-800 text-pretty text-white font-sans my-2 text-center text-plain"> Careers </h1>
-     
-            
-            </Link>
-        <Link
-              href="/bottomheader/legal"
-            >
-                             <h1 className="text-0.5xl md:text-0.75xl lg:text-1xl text-slate-800 text-pretty text-white font-sans my-2 text-center text-plain"> Privacy </h1>
-
-            
-            </Link>
-        <Link
-              href="/bottomheader/contactus"
-            >
-                 <h1 className="text-0.5xl md:text-0.75xl lg:text-1xl text-slate-800 text-pretty text-white font-sans my-2 text-center text-plain"> Contact Us </h1>
-            
-            
-            </Link>
-        <Link
-              href="/bottomheader/legal"
-            >
-                <h1 className="text-0.5xl md:text-0.75xl lg:text-1xl text-slate-800 text-pretty text-white font-sans my-2 text-center text-plain"> Terms & Conditions </h1>
-             
-            
-            </Link>
- 
-      </section></>
-
+          </div>
+        </div>
+      </section>
+    </>
   )
-  
 }

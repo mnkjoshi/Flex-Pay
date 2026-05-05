@@ -12,9 +12,9 @@ export default async function Page() {
   const { data: posts } = await sanityFetch({ query: POSTS_QUERY })
 
   return (
-    <main className="container mx-auto grid grid-cols-1 gap-6 p-12">
-      <h1 className="text-4xl font-bold">Post index</h1>
-      <ul className="grid grid-cols-1 divide-y divide-blue-100">
+    <main className="container mx-auto grid grid-cols-1 gap-6 p-12 bg-white">
+      <h1 className="text-4xl font-bold text-gray-900">Post index</h1>
+      <ul className="grid grid-cols-1 divide-y divide-purple-200">
         {posts.map((post) => (
           <li key={post._id}>
                 <Link className="group" href={`/posts/${post.slug!.current}`}>
@@ -23,9 +23,9 @@ export default async function Page() {
           <Categories categories={post.categories} />
         </div>
         <div className="md:col-span-5 md:w-full">
-          <h2 className="text-2xl text-pretty font-semibold text-slate-800 group-hover:text-pink-600 transition-colors relative">
+          <h2 className="text-2xl text-pretty font-semibold text-gray-900 group-hover:text-purple-600 transition-colors relative">
             <span className="relative z-[1]">{post.title}</span>
-            <span className="bg-pink-50 z-0 absolute inset-0 rounded-lg opacity-0 transition-all group-hover:opacity-100 group-hover:scale-y-110 group-hover:scale-x-105 scale-75" />
+            <span className="bg-purple-50 z-0 absolute inset-0 rounded-lg opacity-0 transition-all group-hover:opacity-100 group-hover:scale-y-110 group-hover:scale-x-105 scale-75" />
           </h2>
           <div className="flex items-center mt-2 md:mt-6 gap-x-6">
             <Author author={post.author} />
@@ -48,7 +48,7 @@ export default async function Page() {
         ))}
       </ul>
       <hr />
-      <Link href="/">&larr; Return home</Link>
+      <Link href="/" className="text-purple-600 hover:text-purple-700">&larr; Return home</Link>
     </main>
   )
 }

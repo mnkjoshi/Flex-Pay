@@ -17,8 +17,8 @@ export default async function Page() {
             <Image className="object-fit" src={skyscraper} alt="company logo" />
 
       </div>
-      <h1 className="text-[35px] font-sans my-7 mx-20 text-bold text-center"> What is FLEX-PAY</h1>
-      <h2 className="text-[15px] font-sans mx-50">FLEX-PAY is a transformative payment infrastructure uniting nine dynamic payment types and a suite
+      <h1 className="text-[35px] font-sans my-7 mx-20 text-bold text-center text-gray-900"> What is FLEX-PAY</h1>
+      <h2 className="text-[15px] font-sans mx-50 text-gray-700">FLEX-PAY is a transformative payment infrastructure uniting nine dynamic payment types and a suite
         of advanced financial services, all accessible through a single seamless API.</h2>
       <br></br>
       <h2 className="text-[15px] font-sans text-center mx-50"> Built for scalability, flexibility, and innovation, FLEX-PAY enables PSPs,  acquirers, merchants and financial institutions to modernize their operations, simplify integrations, and deliver fintech-grade payment experiences.</h2>
@@ -56,26 +56,26 @@ export default async function Page() {
       </div> 
 
     </section>
-     <section className="container mx-auto grid grid-cols-1 gap-6 p-12 bg-linear-to-r from-black to-red-900 content-center">
+     <section className="container mx-auto grid grid-cols-1 gap-6 p-12 bg-gradient-to-r from-purple-600 to-purple-700 content-center">
 
-        <h1 className="text-1xl md:text-2xl lg:text-3xl text-slate-800 text-pretty text-white font-sans my-7 text-center text-plain"> Get in touch with us today to discover how Flex-Pay is shaping the future of global payments. </h1>
+        <h1 className="text-1xl md:text-2xl lg:text-3xl text-pretty text-white font-sans my-7 text-center text-plain"> Get in touch with us today to discover how Flex-Pay is shaping the future of global payments. </h1>
         <Link
               href="/signup"
             >
                     
          <div className = "flex justify-center"> 
-              <button className="bg-white hover:bg-purple-900 text-black font-bold px-4 py-3 rounded-full">
+              <button className="bg-white hover:bg-purple-50 text-purple-700 font-bold px-4 py-3 rounded-full">
         SIGN UP
         </button>
             </div> 
             </Link>
  
-      </section><section className="container mx-auto grid grid-cols-2 gap-6 p-12 bg-purple-900 content-center">
+      </section><section className="container mx-auto grid grid-cols-2 gap-6 p-12 bg-purple-600 content-center">
 
 
         <Link href="/bottomheader/aboutus">
 
-          <h1 className="text-0.5xl md:text-0.75xl lg:text-1xl text-slate-800 text-pretty text-white font-sans my-2 text-center text-plain"> About Us </h1>
+          <h1 className="text-0.5xl md:text-0.75xl lg:text-1xl text-pretty text-white font-sans my-2 text-center text-plain"> About Us </h1>
 
 
 
